@@ -16,7 +16,7 @@ jobs:
     - uses: pnpm/action-setup@v2
       with:
         version: 8.8.0
-    - run: pnpm ci
+    - run: pnpm install
     - run: pnpm run check
 
   publish-npm:
@@ -28,7 +28,7 @@ jobs:
         with:
           version: 8.8.0
           registry-url: https://registry.npmjs.org/
-      - run: pnpm ci
+      - run: pnpm install
       - run: pnpm run prepublishOnly
       - run: pnpm publish
         env:
