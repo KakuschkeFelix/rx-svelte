@@ -28,8 +28,12 @@ jobs:
         with:
           version: 8.8.0
           registry-url: https://registry.npmjs.org/
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
       - run: pnpm install
       - run: pnpm run prepublishOnly
-      - run: pnpm publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
