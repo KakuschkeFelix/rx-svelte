@@ -6,11 +6,12 @@
             "build": "vite build && npm run package",
             "preview": "vite preview",
             "package": "svelte-kit sync && svelte-package && publint",
-            "prepublishOnly": "pnpm run package",
+            "prepublishOnly": "npm run package",
             "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
             "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
             "lint": "prettier --plugin-search-dir . --check . && eslint .",
-            "format": "prettier --plugin-search-dir . --write ."
+            "format": "prettier --plugin-search-dir . --write .",
+            "ci": "svelte-check --tsconfig ./tsconfig.json && prettier --plugin-search-dir . --check . && eslint . && svelte-package && publint"
       },
       "exports": {
             ".": {
@@ -29,7 +30,7 @@
       "devDependencies": {
             "@sveltejs/adapter-auto": "^2.0.0",
             "@sveltejs/kit": "^1.20.4",
-            "@sveltejs/package": "^2.0.0",
+            "@sveltejs/package": "^2.2.2",
             "@typescript-eslint/eslint-plugin": "^6.0.0",
             "@typescript-eslint/parser": "^6.0.0",
             "eslint": "^8.28.0",
@@ -46,5 +47,26 @@
       },
       "svelte": "./dist/index.js",
       "types": "./dist/index.d.ts",
-      "type": "module"
+      "type": "module",
+      "author": {
+            "name": "Felix Kakuschke",
+            "url": "https://github.com/KakuschkeFelix/svelte-rx"
+      },
+      "keywords": [
+            "svelte",
+            "rxjs",
+            "reactive",
+            "state",
+            "store",
+            "observable"
+      ],
+      "license": "MIT",
+      "repository": {
+            "type": "git",
+            "url": "https://github.com/KakuschkeFelix/svelte-rx"
+      },
+      "bugs": {
+            "url": "https://github.com/KakuschkeFelix/svelte-rx/issues"
+      },
+      "homepage": "https://github.com/KakuschkeFelix/svelte-rx"
 }
