@@ -1,6 +1,6 @@
 {
       "name": "rx-svelte",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "scripts": {
             "dev": "vite dev",
             "build": "vite build && npm run package",
@@ -10,8 +10,7 @@
             "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
             "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
             "lint": "prettier --plugin-search-dir . --check . && eslint .",
-            "format": "prettier --plugin-search-dir . --write .",
-            "ci": "svelte-check --tsconfig ./tsconfig.json && prettier --plugin-search-dir . --check . && eslint . && svelte-package && publint"
+            "format": "prettier --plugin-search-dir . --write ."
       },
       "exports": {
             ".": {
