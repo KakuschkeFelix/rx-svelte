@@ -4,9 +4,8 @@
 name: Publish rx-svelte
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [created]
 
 jobs:
   build:
