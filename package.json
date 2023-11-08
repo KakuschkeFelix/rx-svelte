@@ -1,5 +1,5 @@
 {
-      "name": "svelte-rx",
+      "name": "rx-svelte",
       "version": "0.1.0",
       "scripts": {
             "dev": "vite dev",
@@ -50,7 +50,7 @@
       "type": "module",
       "author": {
             "name": "Felix Kakuschke",
-            "url": "https://github.com/KakuschkeFelix/svelte-rx"
+            "url": "https://github.com/KakuschkeFelix/rx-svelte"
       },
       "keywords": [
             "svelte",
@@ -63,10 +63,10 @@
       "license": "MIT",
       "repository": {
             "type": "git",
-            "url": "https://github.com/KakuschkeFelix/svelte-rx"
+            "url": "https://github.com/KakuschkeFelix/rx-svelte"
       },
       "bugs": {
-            "url": "https://github.com/KakuschkeFelix/svelte-rx/issues"
+            "url": "https://github.com/KakuschkeFelix/rx-svelte/issues"
       },
-      "homepage": "https://github.com/KakuschkeFelix/svelte-rx"
+      "homepage": "https://github.com/KakuschkeFelix/rx-svelte"
 }
